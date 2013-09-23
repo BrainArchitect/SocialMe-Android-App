@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+<TableLayout 
+	android:id="@+id/snLayoutTable"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp" >
+	
+    <!-- Content -->
+	<TableRow android:id="@+id/snTextRow" 
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent">
+	   
+		<TextView
+			android:id="@+id/snText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textStyle="bold"
+			android:textColor="@android:color/black" />
+	</TableRow>
+</TableLayout>
+</ScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yummycode.ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <permission
+	    android:name="com.example.mapdemo.permission.MAPS_RECEIVE"
+	    android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.mapdemo.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <uses-feature
+	  android:glEsVersion="0x00020000"
+	  android:required="true"/>
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data
+	      android:name="com.google.android.maps.v2.API_KEY"
+	      android:value="AIzaSyAzWKdqy-OQTufsZDYly6v-CiGihz-bdUs"/>
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.yummycode.ui.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yummycode.ui.RecoveryActivity"
+            android:label="@string/title_activity_recovery"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yummycode.ui.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.yummycode.ui.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yummycode.ui.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.yummycode.ui.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name="com.yummycode.ui.MyProfileActivity"
+            android:label="@string/title_activity_my_profile"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yummycode.ui.MapActivity" />
+        </activity>
+        <activity
+            android:name="com.yummycode.ui.AddRequestActivity"
+            android:label="@string/title_activity_add_request"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yummycode.ui.MapActivity" />
+        </activity>
+        <activity
+            android:name="com.yummycode.ui.UserProfileActivity"
+            android:label="@string/title_activity_user_profile" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yummycode.ui.MapActivity" />
+        </activity>
+        <activity
+            android:name="com.yummycode.ui.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yummycode.ui.MapActivity" />
+        </activity>
+    </application>
+
+</manifest>

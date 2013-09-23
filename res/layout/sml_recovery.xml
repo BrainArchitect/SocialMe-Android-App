@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+        <LinearLayout
+            android:id="@+id/prLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+    
+            <TextView
+                android:id="@+id/prPasswordRecoveryMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/prPasswordRecoveryLabel"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+    
+            <EditText
+                android:id="@+id/prEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="@string/loginEmailFieldHint"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" >
+            </EditText>
+            
+            <Button
+                android:id="@+id/prResetButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/prResetButtonLabel" />
+            
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

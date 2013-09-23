@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+        <LinearLayout
+            android:id="@+id/loginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+    
+            <ImageView
+                android:id="@+id/loginSMLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="40dp"
+                android:contentDescription="@string/regAvatarDescription"
+                android:src="@drawable/avatar" />
+            
+            <TextView
+                android:id="@+id/loginPasswordRecoveryLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:text="@string/regAvatarEditInfoText"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+    
+            <EditText
+                android:id="@+id/regFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="@string/regFullNameFieldHint"
+                android:inputType="text"
+                android:singleLine="true" >
+            </EditText>
+    
+            <EditText
+                android:id="@+id/regEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="@string/loginEmailFieldHint"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+            
+            <EditText
+                android:id="@+id/regPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="@string/loginPasswordFieldHint"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+            
+            <EditText
+                android:id="@+id/regRePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="@string/regRePasswordFieldHint"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+            
+            <LinearLayout
+                android:id="@+id/regSpinnersLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+    
+                <Spinner
+	                android:id="@+id/regSex"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginRight="5dp"
+	                android:layout_weight="0.5"
+	                android:entries="@array/regSexOptions" />
+    
+                <Spinner
+	                android:id="@+id/regAge"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginRight="5dp"
+	                android:layout_weight="0.5"
+	                android:entries="@array/regAgeOptions" />
+    
+            </LinearLayout>
+            
+            <EditText
+                android:id="@+id/regDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ems="10"
+                android:hint="@string/regDescriptionHint"
+                android:inputType="textMultiLine" />
+            
+            <LinearLayout
+                android:id="@+id/regTermsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal" >
+    
+                <CheckBox
+	                android:id="@+id/regTermsCheck"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical|center_horizontal"
+	                android:text="@string/regTermsAcceptLabel"
+	                android:layout_weight="0.6" />
+    
+                <Button
+                    android:id="@+id/regTermsConditionsButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/regTermsConditionsButtonText"
+                    android:layout_weight="0.4" />
+    
+            </LinearLayout>
+            
+            <Button
+                android:id="@+id/regRegisterButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="@string/loginRegisterButtonLabel" />
+            
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

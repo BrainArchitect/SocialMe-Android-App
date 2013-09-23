@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mpRequestInfoLayoutTable"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp" >
+    
+    <!-- Request Type -->
+    <TableRow android:id="@+id/mpRequestInfoTypeLabelRow" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent">
+       
+        <TextView
+            android:id="@+id/mpRequestInfoTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mpRequestInfoTypeLabelText"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+    </TableRow>
+    
+    <TableRow android:id="@+id/mpRequestInfoTypeRow" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent">
+       
+        <TextView
+            android:id="@+id/mpRequestInfoType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+    </TableRow>
+    
+    <!-- Request Description -->
+    <TableRow android:id="@+id/mpRequestInfoDescriptionTitleRow" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent">
+       
+        <TextView
+            android:id="@+id/mpRequestInfoDescriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mpRequestInfoDescriptionLabelText"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+    </TableRow>
+    
+    <TableRow android:id="@+id/mpRequestInfoDescriptionRow" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent">
+       
+        <TextView
+            android:id="@+id/mpRequestInfoDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+    </TableRow>
+    
+    <!-- Request Range -->
+    <TableRow android:id="@+id/mpRequestInfoRangeTitleRow" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent">
+       
+        <TextView
+            android:id="@+id/mpRequestInfoRangeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mpRequestInfoRangeLabelText"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+    </TableRow>
+    
+    <TableRow android:id="@+id/mpRequestInfoRangeRow" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent">
+       
+        <TextView
+            android:id="@+id/mpRequestInfoRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+    </TableRow>
+    
+    <!-- Request Longitude -->
+    <TableRow android:id="@+id/mpRequestInfoLongitudeTitleRow" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent">
+       
+        <TextView
+            android:id="@+id/mpRequestInfoLongitudeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mpRequestInfoLongitudeLabelText"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+    </TableRow>
+    
+    <TableRow android:id="@+id/mpRequestInfoLongitudeRow" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent">
+       
+        <TextView
+            android:id="@+id/mpRequestInfoLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+    </TableRow>
+    
+    <!-- Request Latitude -->
+    <TableRow android:id="@+id/mpRequestInfoLatitudeTitleRow" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent">
+       
+        <TextView
+            android:id="@+id/mpRequestInfoLatitudeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mpRequestInfoLatitudeLabelText"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+    </TableRow>
+    
+    <TableRow android:id="@+id/mpRequestInfoLatitudeRow" 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent">
+       
+        <TextView
+            android:id="@+id/mpRequestInfoLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+    </TableRow>
+</TableLayout>
